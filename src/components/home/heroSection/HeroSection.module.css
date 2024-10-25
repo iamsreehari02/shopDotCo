@@ -1,0 +1,24 @@
+.counterContainer {
+  display: flex;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.counterContainer > div {
+  min-height: 60px; /* Adjust this value based on your design */
+}
+
+@media (max-width: 640px) {
+  .counterContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .counterContainer > div:nth-child(3) {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .counterContainer > div:nth-child(2) {
+    border-right: none;
+  }
+}

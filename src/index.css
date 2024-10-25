@@ -37,7 +37,6 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -49,6 +48,14 @@ h1 {
   line-height: 64px;
   font-size: 64px;
 }
+
+h3 {
+  font-family: "Satoshi", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
 P {
   font-size: 16px;
   font-weight: 400;

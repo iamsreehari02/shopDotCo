@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
 import CartIcon from "../../assets/svg/cart.svg";
 import ProfileIcon from "../../assets/svg/profile.svg";
-import { IMG_ALT } from "../../constants";
+import { IMG_ALT, ROUTES } from "../../constants";
 import Search from "../search/Search";
 import { navLinks } from "../utils/mockData";
 
@@ -13,14 +13,12 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white container">
-      <div className="py-4 flex items-center justify-between">
-        {/* Logo Section */}
-        <div className="flex items-center">
+    <header className="bg-white  sticky top-0 ">
+      <div className="container py-4 flex items-center justify-between">
+        <Link to={ROUTES.HOME} className="flex items-center">
           <img src={LogoIMG} alt={IMG_ALT.LOGO} />
-        </div>
+        </Link>
 
-        {/* Navigation Links and Search - Desktop */}
         <div className="hidden lg:flex items-center space-x-6 flex-grow mx-8">
           <nav className="flex items-center space-x-6">
             {navLinks.map((link, index) => (
@@ -69,7 +67,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Right section with Icons */}
         <div className="flex items-center space-x-4">
           <img
             src={CartIcon}
@@ -91,7 +88,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed inset-0 z-50 bg-white transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"

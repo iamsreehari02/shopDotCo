@@ -1,0 +1,18 @@
+.sponsorsLogos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+@media (max-width: 768px) {
+  .sponsors {
+    display: flex;
+    justify-content: center;
+  }
+  .sponsorsLogos {
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+  }
+}
