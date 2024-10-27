@@ -49,6 +49,12 @@ h1 {
   font-size: 64px;
 }
 
+h2 {
+  font-weight: 800;
+  line-height: 57.6px;
+  font-size: 48px;
+}
+
 h3 {
   font-family: "Satoshi", sans-serif;
   font-size: 40px;

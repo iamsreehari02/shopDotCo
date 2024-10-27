@@ -1,5 +1,10 @@
 import Header from "./components/header/Header";
-import { HeroSection, SponsorsSection } from "./components/home";
+import {
+  HeroSection,
+  NewArrivals,
+  SponsorsSection,
+  TopSelling,
+} from "./components/home";
 
 function App() {
   return (
@@ -7,6 +12,8 @@ function App() {
       <Header />
       <HeroSection />
       <SponsorsSection />
+      <NewArrivals />
+      <TopSelling />
     </div>
   );
 }

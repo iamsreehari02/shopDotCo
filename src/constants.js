@@ -19,4 +19,16 @@ export const WHITE = "white";
 
 export const BUTTON_LABELS = {
   SHOP_NOW: "Shop Now",
+  VIEW_ALL: "View All",
+  VIEW_LESS: "View Less",
+};
+
+export const TITLES = {
+  NEW_ARRIVALS: "NEW ARRIVALS",
+  TOP_SELLING: "TOP SELLING",
+};
+
+export const COLORS = {
+  WHITE: "white",
+  BLACK: "black",
 };
