@@ -1,7 +1,7 @@
 import React from "react";
-import Products from "../../products/Products";
-import { TITLES } from "../../../constants";
-import { newArrivalProducts } from "../../utils/mockData";
+import Products from "../../../products/Products";
+import { TITLES } from "../../../../constants";
+import { newArrivalProducts } from "../../../utils/mockData";
 
 const NewArrivals = () => {
   return (
